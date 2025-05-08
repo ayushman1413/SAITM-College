@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Saitm College</title>
+    <!-- <link rel="stylesheet" href="../assets/css/main.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+
+        }
+
+
+        header {
+            background: #799dc5;
+            color: #fff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('../ass');  */
+            background-image: url(./assets/img/saitmimg.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 95vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(249, 244, 244);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            color: rgb(253, 252, 252);
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .about-section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #007BFF;
+        }
+
+        .mission-vision {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .mission,
+        .vision {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .history {
+            margin-bottom: 40px;
+        }
+
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .achievement-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul style="display: flex; justify-content: center; gap: 30px; list-style: none;">
+                    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">About Us</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Courses</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Saitm College</h1>
+                    <p>Excellence in Education Since 2005</p>
+                   
+                    <h3>
+                    <Contact>Discover the opportunities that await you at Saitm College. Contact us for more information about admissions and programs.</p>
+                        <button onclick="document.getElementById('achievements-section').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
+                </h3>
+                </div>
+            </section>
+
+    <main class="container">
+        <section class="about-section">
+            <h2 class="section-title">About Our College</h2>
+
+            <div class="mission-vision">
+                <div class="mission-vision-item">
+                    <div class="image-container">
+                        <img src="assets/img/about-us/Course-evaluation-methods-Innovative-Course-Evaluation-Methods-for-Boosting-Entrepreneurial-Skills--Empowering-Students-to-Reflect-on-Their-Learning.webp"
+                            alt="Our Mission" />
+                    </div>
+                    <div class="text-container">
+                        <h3>Our Mission</h3>
+                        <p>To empower students with knowledge and skills that will enable them to excel in their chosen
+                            careers and contribute positively to society.</p>
+                        <p>We are committed to providing a holistic education that fosters innovation, critical thinking,
+                            and ethical values.</p>
+                        <p>Our mission is to create a vibrant learning environment that encourages creativity and
+                            entrepreneurship.</p>
+                    </div>
+                </div>
+                <div class="mission-vision-item">
+
+                    <div class="text-container">
+                        <h3>Our Vision</h3>
+                        <p>To be a leading institution recognized for excellence in education, research, and community service,
+                            fostering innovation and entrepreneurship.</p>
+                        <p>We aim to create a vibrant learning environment that nurtures creativity, critical thinking, and
+                            ethical values.</p>
+                        <p>Our vision is to be a global leader in technical education, producing graduates who are not only
+                            academically proficient but also socially responsible.</p>
+                         
+                    </div>
+                    <div class="image-container">
+                        <img src="assets/img/about-us/ourvision.jpg" alt="Our Vision" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="history mission-vision-item">
+                <div class="image-container">
+                    <img src="assets/img/about.jpg" alt="Our History" />
+                </div>
+                <br>
+                <div class="text-container">
+                    <h3>Our History</h3>
+                    <p>St. Andrews Institute of Technology & Management (SAITM) was established in 2005 with a vision to
+                        provide quality technical education. Affiliated to Maharshi Dayanand University, Rohtak, and
+                        approved by AICTE, SAITM has grown into a premier institution offering:</p>
+                    <ul>
+                        <li>B.Tech in Computer Science, Mechanical, Civil, and Electronics Engineering</li>
+                        <li>MBA programs with various specializations</li>
+                        <li>BCA and BBA programs</li>
+                        <li>Diploma courses in Engineering</li>
+                    </ul>
+                    <p>Our sprawling 10-acre campus in Gurugram features state-of-the-art infrastructure including:</p>
+                    <ul>
+                        <li>Modern classrooms with smart boards</li>
+                        <li>Advanced computer and engineering labs</li>
+                        <li>Well-stocked library with digital resources</li>
+                        <li>Sports facilities and hostel accommodation</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <h3 class="section-title" id="achievements-section">Our Achievements</h3>
+            <div class="achievements">
+                <div class="achievement-card">
+                    <h4>Accreditation & Rankings</h4>
+                    <p>NAAC Accredited with 'A' Grade | Ranked among top engineering colleges in Haryana | ISO 9001:2015
+                        Certified</p>
+                        <img src="assets/img/about-us/A+grade .jpg" alt="" style="width: 100%; height: auto; border-radius: 8px;"><br>
+                   
+                    <div class="achievement-card">
+                        <h4>Placement Records</h4>
+                        <p>95% placement rate with top recruiters including TCS, Wipro, Infosys, Amazon, and more |
+                            Highest package of 18 LPA</p>
+                            <img src="assets/img/about-us/placementrecord.jpeg" alt=""
+                            style="width: 100%; height: auto; border-radius: 8px;"><br>
+                    </div>
+                    <div class="achievement-card">
+                        <h4>Industry Partnerships</h4>
+                        <p>MoUs with leading companies for internships and training | Regular industry expert lectures
+                            and workshops</p> 
+                            <img src="assets/img/about-us/industry-partnership.jpeg" alt="" style="width: 100%; height: auto; border-radius: 8px;"><br>
+                           
+                    </div>
+                    <div class="achievement-card">
+                        <h4>Student Achievements</h4>
+                        <p>Winners of national-level technical competitions | Published research papers in reputed
+                            journals | Successful startup ventures</p>
+                            <img src="assets/img/about-us/student-acheivement.jpeg" alt="" style="width: 100%; height: auto; border-radius: 8px;"><br>
+                    </div>
+                </div>
+
+                <div class="faculty-section">
+                    <h3 class="section-title">Our Distinguished Faculty</h3>
+                    <p>SAITM's faculty comprises 120+ members including:</p>
+                    <ul>
+                        <li>80% PhD holders with specializations in emerging technologies</li>
+        
+                        <li>Visiting professors from IITs and international universities</li>
+                        <li>Industry veterans with 10+ years experience at companies like Google, Microsoft, and Tata
+                        </li>
+                        <li>Recipients of national teaching awards and research grants</li>
+                        <li>Authors of 50+ research papers published in Scopus-indexed journals</li>
+                        <li>Trainers for various certification programs (AWS, Cisco, etc.)</li>
+                        <li>Mentors for student-led projects and startups</li>
+                        <li>Active participants in national and international conferences</li>
+                        <li>Conducting online courses and webinars for skill enhancement</li>
+                        <li>Involved in consultancy projects with industry partners</li>
+                        <li>Contributors to institutional research and innovation initiatives</li>
+                        <li>Facilitators for interdisciplinary projects and collaborations</li>
+                       
+                    </ul>
+                    <img src="assets/img/campus-img/WhatsApp Image 2025-04-13 at 01.10.38.jpeg" alt="" style="width: 100%; height: 60vh; border-radius: 8px;"><br>
+                    <!-- <ul>
+                        <li>Conducting workshops on latest technologies (AI, ML, Data Science)</li>
+                        <li>Involved in curriculum development and academic advisory boards</li>
+                        <li>Facilitators for soft skills and personality development sessions</li>
+                        <li>Guides for student research projects and thesis</li>
+                        <li>Contributors to community service and outreach programs</li>
+                        <li>Members of professional bodies (IEEE, ACM, etc.)</li>
+                        <li>Organizers of faculty development programs and training sessions</li>
+                        <li>Advisors for student clubs and technical societies</li>     
+                        <li>Conducting online courses and webinars for skill enhancement</li>
+                        <li>Involved in consultancy projects with industry partners</li>
+                        <li>Contributors to institutional research and innovation initiatives</li>
+                        <li>Facilitators for interdisciplinary projects and collaborations</li>
+                          <li>Mentors for student exchange programs and internships</li>
+                    </ul> -->
+                   
+                </div>
+                <div class="academics-section">
+                    <h3 class="section-title">Academic Excellence</h3>
+                    <p>Our rigorous academic programs feature:</p>
+                    <ul>
+                        <li>Industry-aligned curriculum updated annually</li>
+                        <li>Choice Based Credit System (CBCS) with 100+ electives</li>
+                        <li>Project-based learning with real-world case studies</li>
+                        <li>Semester exchange programs with foreign universities</li>
+                        <li>Mandatory internships and industry certifications</li>
+                        <li>Research projects with faculty mentorship</li>
+                        <li>Regular assessments and feedback mechanisms</li>
+                        <li>Student-led seminars and workshops</li>
+                        <li>Guest lectures by industry experts</li> 
+                        <li>Online learning resources and e-books</li>
+                        <li>Access to virtual labs and simulation software</li>
+                        <li>Collaboration with industry for live projects</li>
+                        <li>Participation in national and international competitions</li>
+                        <li>Interdisciplinary projects and hackathons</li>
+                        <li>Skill development programs and workshops</li>
+                        <li>Soft skills training and personality development</li>
+                        <li>Mock interviews and resume building sessions</li>
+                        <li>Alumni mentorship programs</li>
+                        <li>Regular feedback from industry partners</li>
+                        <li>Continuous improvement of teaching methodologies</li>
+                        <li>Use of technology in teaching (smart classrooms, online platforms)</li>
+                        <li>Student exchange programs with partner institutions</li>
+                        <li>Collaboration with research organizations for projects</li>
+                        <li>Participation in research conferences and symposiums</li>
+                        <li>Publication of research papers in reputed journals</li>
+                        <li>Collaboration with industry for consultancy projects</li>
+                        <li>Participation in faculty development programs</li>
+                    </ul>
+                    <img src="/assets/img/campus-img/" alt="">
+                </div>
+
+                <div class="research-section">
+                    <h3 class="section-title">Research & Innovation</h3>
+                    <p>Our research ecosystem includes:</p>
+                    <ul>
+                        <li>10+ specialized research centers (AI, IoT, Renewable Energy, etc.)</li>
+                        <li>₹5 crore annual research funding</li>
+                        <li>50+ patents filed by students and faculty</li>
+                        <li>Annual international research symposium</li>
+                        <li>Incubation center supporting 15+ student startups</li>
+                    </ul>
+                </div>
+
+                <div class="campus-life">
+                    <h3 class="section-title">Vibrant Campus Life</h3>
+                    <p>Beyond academics, SAITM offers:</p>
+                    <ul>
+                        <li><strong>Annual Festivals:</strong> TechX (technical fest), Kalaayan (cultural fest), Sports
+                            Week</li>
+                        <li><strong>Clubs:</strong> Coding Club, Robotics Club, Literary Society, Photography Club</li>
+                        <li><strong>Facilities:</strong> Olympic-size swimming pool, cricket ground, gym, auditorium
+                        </li>
+                        <li><strong>Student Support:</strong> Counseling center, career guidance, health services</li>
+                        <li><strong>Community Engagement:</strong> NSS programs, village adoption initiatives</li>
+                    </ul>
+                </div>
+
+                <div class="alumni-section">
+                    <h3 class="section-title">Our Distinguished Alumni</h3>
+                    <p>Notable alumni making global impact:</p>
+                    <ul>
+                        <li>Rahul Sharma - Senior Engineer at Google (B.Tech 2012)</li>
+                        <li>Priya Patel - Founder of EdTech Startup (MBA 2015)</li>
+                        <li>Vikram Singh - Scientist at ISRO (M.Tech 2017)</li>
+                        <li>Ananya Gupta - Award-winning AI Researcher (B.Tech 2019)</li>
+                    </ul>
+                </div>
+
+                <div class="campus-gallery">
+                    <h3 class="section-title">Campus Gallery</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="assets/img/campus-img/WhatsApp Image 2025-04-13 at 18.22.57 (38).jpeg"
+                                alt="Main Campus Building">
+                            <p>Our state-of-the-art main building</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/img/campus-img/WhatsApp Image 2025-04-13 at 01.10.38 (3).jpeg"
+                                alt="Library">
+                            <p>Fully-stocked digital library</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/img/campus-img/WhatsApp Image 2025-04-13 at 01.10.38.jpeg"
+                                alt="Computer Lab">
+                            <p>Modern computer laboratories</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/img/campus-img/WhatsApp Image 2025-04-13 at 01.10.39 (3).jpeg"
+                                alt="Classroom">
+                            <p>Smart classrooms with latest technology</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/img/campus-img/WhatsApp Image 2025-04-13 at 01.10.41 (3).jpeg"
+                                alt="Auditorium">
+                            <p>500-seat auditorium for events</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/img/campus-img/WhatsApp Image 2025-04-13 at 18.22.57 (10).jpeg"
+                                alt="Sports Facilities">
+                            <p>Olympic-size sports facilities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .campus-gallery {
+                        margin: 40px 0;
+                    }
+
+                    .gallery-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                        gap: 20px;
+                        margin-top: 20px;
+                    }
+
+                    .gallery-item {
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease;
+                    }
+
+                    .gallery-item:hover {
+                        transform: translateY(-5px);
+                    }
+
+                    .gallery-item img {
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+
+                    .gallery-item p {
+                        padding: 15px;
+                        background: #f8f9fa;
+                        margin: 0;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                </style>
+        </section>
+
+        <style>
+            .mission-vision-item {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-bottom: 40px;
+            }
+
+            .mission-vision-item .image-container {
+                flex: 1;
+                max-width: 400px;
+            }
+
+            .mission-vision-item .image-container img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .mission-vision-item .text-container {
+                flex: 1;
+            }
+
+            @media (max-width: 768px) {
+                .mission-vision-item {
+                    flex-direction: column;
+                }
+
+                .mission-vision-item .image-container,
+                .mission-vision-item .text-container {
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Saitm College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

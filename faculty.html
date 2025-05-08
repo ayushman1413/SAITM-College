@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty of St. Andrews</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<style>
+.faculty-member {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid var(--accent-color);   
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: fit-content;
+ 
+ 
+}
+.faculty-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 170vh;
+
+}
+
+.faculty-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.faculty-member h2 {
+  font-size: 1.5rem;
+  color: var(--heading-color);
+  margin: 10px 0;
+}
+
+.faculty-member p {
+  font-size: 1rem;
+  color: var(--default-color);
+}
+
+.faculty-member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.faculty-member img {
+  width: 120px;
+  height: 120px; 
+  object-fit: cover; 
+}
+nav {
+    display: flex;
+}
+
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Faculty</a>
+                <!-- <ul>
+                  
+                    <li><a href="#person1">Person 1</a></li>
+                    <li><a href="#person2">Person 2</a></li>
+                    <li><a href="#person3">Person 3</a></li>
+                    <li><a href="#person4">Person 4</a></li>
+                    <li><a href="#person5">Person 5</a></li>
+                    <li><a href="#person6">Person 6</a></li>
+                    <li><a href="#person7">Person 7</a></li>
+                    <li><a href="#person8">Person 8</a></li>
+                    <li><a href="#person9">Person 9</a></li>
+                    <li><a href="#person10">Person 10</a></li>
+                    <li><a href="#person11">Person 11</a></li>
+                    <li><a href="#person12">Person 12</a></li>
+                    <li><a href="#person13">Person 13</a></li>
+                    <li><a href="#person14">Person 14</a></li>
+                    <li><a href="#person15">Person 15</a></li>
+                    <li><a href="#person16">Person 16</a></li>
+                    <li><a href="#person17">Person 17</a></li>
+                    <li><a href="#person18">Person 18</a></li>
+                    <li><a href="#person19">Person 19</a></li>
+                    <li><a href="#person20">Person 20</a></li>
+                    <li><a href="#person21">Person 21</a></li>
+                    <li><a href="#person22">Person 22</a></li>
+                    <li><a href="#person23">Person 23</a></li>
+                    <li><a href="#person24">Person 24</a></li>
+                    <li><a href="#person25">Person 25</a></li>
+                    <li><a href="#person26">Person 26</a></li>
+                    <li><a href="#person27">Person 27</a></li>
+                    <li><a href="#person28">Person 28</a></li>
+                    <li><a href="#person29">Person 29</a></li>
+                    <li><a href="#person30">Person 30</a></li>
+                </ul> -->
+            </li>
+            <li><a href="http://saitm.ac.in">Saitm</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Faculty of St. Andrews</h1>
+ 
+        <div class="faculty-list">
+           
+            <div class="faculty-member" id="person1">
+                <img src="assets/img/profile-images.jpeg" alt="Person 1">
+                <h2>Person 1</h2>
+                <p>Details about Person 1.</p>
+            </div>
+            <div class="faculty-member" id="person2">
+                <img src="assets/img/profile-images.jpeg" alt="Person 2">
+                <h2>Person 2</h2>
+                <p>Details about Person 2.</p>
+            </div>
+            <div class="faculty-member" id="person3">
+                <img src="assets/img/profile-images.jpeg" alt="Person 3">
+                <h2>Person 3</h2>
+                <p>Details about Person 3.</p>
+            </div>
+            <div class="faculty-member" id="person4">
+                <img src="assets/img/profile-images.jpeg" alt="Person 4">
+                <h2>Person 4</h2>
+                <p>Details about Person 4.</p>
+            </div>
+            <div class="faculty-member" id="person5">
+                <img src="assets/img/profile-images.jpeg" alt="Person 5">
+                <h2>Person 5</h2>
+                <p>Details about Person 5.</p>
+            </div>
+            <div class="faculty-member" id="person6">
+                <img src="assets/img/profile-images.jpeg" alt="Person 6">
+                <h2>Person 6</h2>
+                <p>Details about Person 6.</p>
+            </div>
+            <div class="faculty-member" id="person7">
+                <img src="assets/img/profile-images.jpeg" alt="Person 7">
+                <h2>Person 7</h2>
+                <p>Details about Person 7.</p>
+            </div>
+            <div class="faculty-member" id="person8">
+                <img src="assets/img/profile-images.jpeg" alt="Person 8">
+                <h2>Person 8</h2>
+                <p>Details about Person 8.</p>
+            </div>
+            <div class="faculty-member" id="person9">
+                <img src="assets/img/profile-images.jpeg" alt="Person 9">
+                <h2>Person 9</h2>
+                <p>Details about Person 9.</p>
+            </div>
+            <div class="faculty-member" id="person10">
+                <img src="assets/img/profile-images.jpeg" alt="Person 10">
+                <h2>Person 10</h2>
+                <p>Details about Person 10.</p>
+            </div>
+            <div class="faculty-member" id="person11">
+                <img src="assets/img/profile-images.jpeg" alt="Person 11">
+                <h2>Person 11</h2>
+                <p>Details about Person 11.</p>
+            </div>
+            <div class="faculty-member" id="person12">
+                <img src="assets/img/profile-images.jpeg" alt="Person 12">
+                <h2>Person 12</h2>
+                <p>Details about Person 12.</p>
+            </div>
+            <div class="faculty-member" id="person13">
+                <img src="assets/img/profile-images.jpeg" alt="Person 13">
+                <h2>Person 13</h2>
+                <p>Details about Person 13.</p>
+            </div>
+            <div class="faculty-member" id="person14">
+                <img src="assets/img/profile-images.jpeg" alt="Person 14">
+                <h2>Person 14</h2>
+                <p>Details about Person 14.</p>
+            </div>
+            <div class="faculty-member" id="person15">
+                <img src="assets/img/profile-images.jpeg" alt="Person 15">
+                <h2>Person 15</h2>
+                <p>Details about Person 15.</p>
+            </div>
+            <div class="faculty-member" id="person16">
+                <img src="assets/img/profile-images.jpeg" alt="Person 16">
+                <h2>Person 16</h2>
+                <p>Details about Person 16.</p>
+            </div>
+            <div class="faculty-member" id="person17">
+                <img src="assets/img/profile-images.jpeg" alt="Person 17">
+                <h2>Person 17</h2>
+                <p>Details about Person 17.</p>
+            </div>
+            <div class="faculty-member" id="person18">
+                <img src="assets/img/profile-images.jpeg" alt="Person 18">
+                <h2>Person 18</h2>
+                <p>Details about Person 18.</p>
+            </div>
+            <div class="faculty-member" id="person19">
+                <img src="assets/img/profile-images.jpeg" alt="Person 19">
+                <h2>Person 19</h2>
+                <p>Details about Person 19.</p>
+            </div>
+            <div class="faculty-member" id="person20">
+                <img src="assets/img/profile-images.jpeg" alt="Person 20">
+                <h2>Person 20</h2>
+                <p>Details about Person 20.</p>
+            </div>
+            <div class="faculty-member" id="person21">
+                <img src="assets/img/profile-images.jpeg" alt="Person 21">
+                <h2>Person 21</h2>
+                <p>Details about Person 21.</p>
+            </div>
+            <div class="faculty-member" id="person22">
+                <img src="assets/img/profile-images.jpeg" alt="Person 22">
+                <h2>Person 22</h2>
+                <p>Details about Person 22.</p>
+            </div>
+            <div class="faculty-member" id="person23">
+                <img src="assets/img/profile-images.jpeg" alt="Person 23">
+                <h2>Person 23</h2>
+                <p>Details about Person 23.</p>
+            </div>
+            <div class="faculty-member" id="person24">
+                <img src="assets/img/profile-images.jpeg" alt="Person 24">
+                <h2>Person 24</h2>
+                <p>Details about Person 24.</p>
+            </div>
+            <div class="faculty-member" id="person25">
+                <img src="assets/img/profile-images.jpeg" alt="Person 25">
+                <h2>Person 25</h2>
+                <p>Details about Person 25.</p>
+            </div>
+            <div class="faculty-member" id="person26">
+                <img src="assets/img/profile-images.jpeg" alt="Person 26">
+                <h2>Person 26</h2>
+                <p>Details about Person 26.</p>
+            </div>
+            <div class="faculty-member" id="person27">
+                <img src="assets/img/profile-images.jpeg" alt="Person 27">
+                <h2>Person 27</h2>
+                <p>Details about Person 27.</p>
+            </div>
+            <div class="faculty-member" id="person28">
+                <img src="assets/img/profile-images.jpeg" alt="Person 28">
+                <h2>Person 28</h2>
+                <p>Details about Person 28.</p>
+            </div>
+            <div class="faculty-member" id="person29">
+                <img src="assets/img/profile-images.jpeg" alt="Person 29">
+                <h2>Person 29</h2>
+                <p>Details about Person 29.</p>
+            </div>
+            <div class="faculty-member" id="person30">
+                <img src="assets/img/profile-images.jpeg" alt="Person 30">
+                <h2>Person 30</h2>
+                <p>Details about Person 30.</p>
+            </div>
+            <!-- ... -->
+     
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 St. Andrews University</p>
+    </footer>
+</body>
+</html>

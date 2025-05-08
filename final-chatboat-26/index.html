@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAITM Chatbot</title>
+  <link rel="stylesheet" href="chat.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="top">
+        <div class="logo-container">
+          <img src="assets/gemini_icon.png" alt="SAITM Logo" class="logo">
+          <h2 class="logo-text">SAITM</h2>
+          <img class="menu" id="menuToggle" src="assets/menu_icon.png" alt="Menu toggle" />
+        </div>
+        
+        <div class="new-chat" id="newChat">
+          <img src="assets/plus_icon.png" alt="New chat" />
+          <p>New chat</p>
+        </div>
+        
+        <div class="recent">
+          <p class="recent-title">Quick Links</p>
+          <div class="recent-entry" data-query="Tell me about SAITM campus">
+            <img src="assets/message_icon.png" alt="Message" />
+            <p>SAITM Campus</p>
+          </div>
+          <div class="recent-entry" data-query="What are the hostel facilities?">
+            <img src="assets/message_icon.png" alt="Message" />
+            <p>SAITM Hostel</p>
+          </div>
+          <div class="recent-entry" data-query="What are the fees for different courses?">
+            <img src="assets/message_icon.png" alt="Message" />
+            <p>Fees Structure</p>
+          </div>
+          <div class="recent-entry" data-query="What courses are offered at SAITM?">
+            <img src="assets/message_icon.png" alt="Message" />
+            <p>Courses Offered</p>
+          </div>
+          <div class="recent-entry" data-query="What are the admission requirements?">
+            <img src="assets/message_icon.png" alt="Message" />
+            <p>Admission Process</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="bottom-item" id="enquiryFormBtn">
+          <img src="assets/question_icon.png" alt="Enquiry" />
+          <p>Enquiry Form</p>
+        </div>
+        <div class="bottom-item">
+          <img src="assets/history_icon.png" alt="Activity history" />
+          <p>Chat History</p>
+        </div>
+        <div class="bottom-item" id="darkModeToggle">
+          <img src="assets/setting_icon.png" alt="Settings" />
+          <p>Dark Mode</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Chat -->
+    <div class="main">
+      <div class="nav">
+        <p>SAITM Chatbot</p>
+        <img src="assets/quest_icon.png" alt="User profile" />
+      </div>
+
+      <div class="main-container" id="mainContainer">
+        <div id="chatArea">
+          <div class="greet">
+            <p>
+              <span>Hello, I am SAITM Assistant</span><br />
+              How can I help you today?
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card" data-query="Tell me about SAITM college">
+              <p>About SAITM</p>
+              <img src="assets/compass_icon.png" alt="About" />
+            </div>
+            <div class="card" data-query="What courses are offered at SAITM?">
+              <p>Courses Offered</p>
+              <img src="assets/bulb_icon.png" alt="Courses" />
+            </div>
+            <div class="card" data-query="What are the admission requirements?">
+              <p>Admission Process</p>
+              <img src="assets/message_icon.png" alt="Admission" />
+            </div>
+            <div class="card" data-query="What are the placement opportunities?">
+              <p>Placements</p>
+              <img src="assets/code_icon.png" alt="Placements" />
+            </div>
+          </div>
+
+          <div id="conversation"></div>
+        </div>
+
+        <div class="main-bottom">
+          <div class="search-box">
+            <input type="text" placeholder="Ask me anything about SAITM..." id="inputBox" />
+            <div>
+              <img src="assets/gallery_icon.png" alt="Attach file" id="attachFile" />
+              <img src="assets/mic_icon.png" alt="Voice input" id="voiceInput" />
+              <img src="assets/send_icon.png" alt="Send message" id="sendBtn" />
+            </div>
+          </div>
+          <p class="bottom-info">
+            St. Andrews Institute of Technology & Management is a prestigious college in India located in Gurugram, Delhi (NCR). SAITM offers various undergraduate and postgraduate courses in technology and management.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enquiry Form Modal -->
+    <div id="enquiryModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Enquiry Form</h2>
+        <form id="enquiryForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="course">Interested Course</label>
+            <select id="course" name="course" required>
+              <option value="">Select a course</option>
+              <option value="B.Tech">B.Tech</option>
+              <option value="M.Tech">M.Tech</option>
+              <option value="BBA">BBA</option>
+              <option value="MBA">MBA</option>
+              <option value="BCA">BCA</option>
+              <option value="MCA">MCA</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
